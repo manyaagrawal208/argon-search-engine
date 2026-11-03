@@ -29,6 +29,9 @@ Argon is a small retrieval-augmented search tool. You ask a question, it pulls l
 
 It runs as a **command-line tool** or as a **dark, gothic-themed web app**, and the whole stack is free: no search API key, no billing account, no credit card.
 
+## Run
+
+**URL**  https://argon-search-engine-2.onrender.com
 ## Features
 
 - **Live web results** from DuckDuckGo, no search API key needed

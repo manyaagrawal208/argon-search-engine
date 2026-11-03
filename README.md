@@ -54,7 +54,7 @@ flowchart LR
 3. `synthesize_answer()` sends the query and context to a Groq-hosted model with a system prompt that says: answer only from these results, cite with `[n]`, flag conflicts, admit gaps.
 4. In the web app, the answer is HTML-escaped, then `linkify_citations()` converts each `[n]` into a link to the matching source.
 
-The full design, including a request sequence diagram, design decisions and the security model, is in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
+The full design, including a request sequence diagram, design decisions and the security model, is in [docs/ARCHITECTURE.md](ARCHITECTURE.md).
 
 ## Tech stack
 

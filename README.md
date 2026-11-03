@@ -54,7 +54,7 @@ flowchart LR
 3. `synthesize_answer()` sends the query and context to a Groq-hosted model with a system prompt that says: answer only from these results, cite with `[n]`, flag conflicts, admit gaps.
 4. In the web app, the answer is HTML-escaped, then `linkify_citations()` converts each `[n]` into a link to the matching source.
 
-The full design, including a request sequence diagram, design decisions and the security model, is in [docs/ARCHITECTURE.md](ARCHITECTURE.md).
+The full design, including a request sequence diagram, design decisions and the security model, is in [ARCHITECTURE.md](ARCHITECTURE.md).
 
 ## Tech stack
 
@@ -101,7 +101,7 @@ Set the key **before** starting the app, in the same terminal window.
 ```bash
 python app.py
 ```
-Then open <http://127.0.0.1:5000>. The server stops when you close the terminal.
+local: Then open <http://127.0.0.1:5000>. The server stops when you close the terminal.
 
 **Command line**
 ```bash
@@ -148,7 +148,7 @@ python -c "from groq import Groq; import os; print([m.id for m in Groq(api_key=o
 
 ## Deployment
 
-Running `python app.py` only serves the app on your own computer. To get a link that works from any device and network, deploy it. [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) has step-by-step instructions for Hugging Face Spaces (free, no card, uses the included `Dockerfile`) and notes on Render and PythonAnywhere.
+Running `python app.py` only serves the app on your own computer. To get a link that works from any device and network, deploy it. [DEPLOYMENT.md](DEPLOYMENT.md) has step-by-step instructions for Hugging Face Spaces (free, no card, uses the included `Dockerfile`) and notes on Render and PythonAnywhere.
 
 ## Security
 
@@ -175,8 +175,8 @@ Running `python app.py` only serves the app on your own computer. To get a link 
 
 ## Documentation
 
-- [System architecture](docs/ARCHITECTURE.md)
-- [Deployment guide](docs/DEPLOYMENT.md)
+- [System architecture](ARCHITECTURE.md)
+- [Deployment guide](DEPLOYMENT.md)
 
 ## License
 

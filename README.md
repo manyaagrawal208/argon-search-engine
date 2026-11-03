@@ -107,7 +107,9 @@ Set the key **before** starting the app, in the same terminal window.
 python app.py
 ```
 Then open
+
 -local: <http://127.0.0.1:5000>. The server stops when you close the terminal.
+
 -url:  <https://argon-search-engine-2.onrender.com>
 
 **Command line**
